@@ -1,0 +1,10 @@
+{
+  "id": "search-tool",
+  "name": "DeskAI Search Tool",
+  "version": "1.0.0",
+  "description": "Search information from the Internet.",
+  "author": "DeskAI",
+  "authorUrl": "https://deskai.app",
+  "fundingUrl": "https://deskai.app/pricing",
+  "worker": "dist/index.js"
+}
