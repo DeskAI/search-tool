@@ -1,6 +1,6 @@
 {
-  "id": "search-tool",
-  "name": "DeskAI Search Tool",
+  "id": "web-search-tool",
+  "name": "Web Search Tool",
   "version": "1.0.0",
   "description": "Search information from the Internet.",
   "author": "DeskAI",
