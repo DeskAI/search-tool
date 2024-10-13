@@ -1,7 +1,5 @@
 import { BrowserContext, LLM } from "@deskai/api";
 
-type Engine = "google" | "baidu" | "bing";
-
 const engineMap = {
   google: "https://www.google.com/search?q=",
   baidu: "https://www.baidu.com/s?ie=UTF-8&wd=",
@@ -42,19 +40,20 @@ export default class {
       defaultConfig: {
         engine: "google",
       },
-      loadConfig(config) {
+      loadConfig: (config) => {
         if (config.engine) {
           this.engine = config.engine;
         }
       },
-      setConfig(key: string, value: any) {
+      setConfig: (key: string, value: any) => {
         if (key === "engine") {
           this.engine = value;
         }
       },
       func: async (params: any) => {
-        const engine = params.engine || "google";
-        const url = engineMap[engine];
+        if (!params.content) return "";
+        const engine = this.engine;
+        const url = engineMap[engine] || engineMap["google"];
         const context = new BrowserContext({
           headless: true,
         });
