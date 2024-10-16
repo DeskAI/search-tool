@@ -4,6 +4,7 @@
   "version": "1.0.1",
   "description": "Search information from the Internet.",
   "author": "DeskAI",
+  "icon": "icon.jpg",
   "authorUrl": "https://deskai.app",
   "fundingUrl": "https://deskai.app/pricing",
   "worker": "index.js"
