@@ -1,6 +1,6 @@
 {
   "name": "deskai-search-tool",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "DeskAI Search Tool",
   "main": "index.js",
   "scripts": {
